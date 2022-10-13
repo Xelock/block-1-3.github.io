@@ -1,0 +1,333 @@
+/* -----------Обнуление---------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ul[class],
+ol[class] {
+  padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+
+
+/* ------------Шапка------------- */
+
+.header{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding-right: 16px;
+  background-color: white;
+}
+
+.nav {
+display: flex;
+align-items: center;
+margin-left: 16px;
+height: 88px;
+width: 100%;
+}
+
+.left-container{
+justify-content: start;
+width: 100%;
+}
+
+.right-container{
+justify-content: end;
+width: 100%;
+}
+
+@media (min-width:1120px){
+.header{
+  display: none;
+  }
+} 
+
+@media (min-width:321px){
+.left-container{
+  justify-content:left;
+}
+}
+
+@media (min-width:321px){
+  .right-container{
+    justify-content:right;
+  }
+  }
+
+.header__divider2{
+  display: none;
+}
+
+@media (min-width:768px){
+  .header__divider2{
+    display: block;
+    margin-right: 20px;
+  }
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+}
+
+.header__logo {
+  width: 97px;
+  height: 100%;
+margin-right: 0;
+}
+
+.header__divider3 {
+  height: 32px;
+  margin-right: 20px;
+  display: none;
+}
+
+@media (min-width:768px) {
+    .header__divider3{
+      display: none;
+    }
+}
+
+.header__divider {
+height: 32px;
+margin-right: 20px;
+
+}
+
+.header__call{
+display: none;
+}
+
+@media (min-width:768px){
+.header__call{
+  display: block;
+  }
+}
+
+.header__chat{
+display: none;
+}
+
+@media (min-width:768px){
+  .header__chat{
+    display: block;
+  }
+}
+
+.header__profile{
+display: none;
+}
+
+@media (min-width:768px){
+  .header__profile{
+    display: block;
+  }
+}
+
+.button{
+  height: 40px;
+}
+
+.right{
+  justify-self: end;
+}
+
+.left{
+  justify-self: start;
+}
+
+.header__text{
+  display: none;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+@media (min-width:1120px){
+  .header__text{
+    display: block;
+  }
+}
+
+/* -----------------MAIN------------------ */
+main{
+  background-color: #F8F8F8;
+  overflow: hidden;
+}
+
+.main__title-container {
+  display: flex;
+  padding-top: 24px;
+}
+
+.main__highlight {
+  margin-right: 16px;
+}
+
+.main__title {
+  font-family: "TT Lakes";
+  font-size: 28px;
+  letter-spacing: -0.6px;
+}
+
+.main__title--left{
+display: flex;
+}
+.main__title--right{
+  display: none;
+}
+
+@media (min-width:1120px){
+  .main__title--right{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 32px;
+  }
+
+}
+
+a{
+  text-decoration: none;
+}
+
+.main__list-container {
+  display: flex;
+  align-items: center;
+  margin: 24px 16px;
+}
+
+@media (min-width:1120px){
+  .main__list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+li{
+  list-style-type: none;
+}
+
+.list-text{
+white-space: nowrap;
+color: #7E7E82;
+font-family: "TT Lakes";
+font-size: 16px;
+line-height: 24px;
+letter-spacing: -0,2px;
+}
+
+.list-item{
+  margin-right: 25px;
+}
+
+input{
+  border: 2px solid #B8FFEC;
+  border-radius: 6px;
+  height: 40px;
+  width: 250px;
+  padding: 8px 10px 8px 16px;
+  font-family: "TT Lakes";
+  font-size: 16px;
+}
+
+.main__text-container {
+  margin-left: 16px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main__text-first {
+  font-family: 'TT Lakes';
+  font-size: 14px;
+}
+
+.main__text-second {
+  font-family: 'TT Lakes';
+  font-size: 14px;
+  display: none;
+  margin-top: 25px;
+}
+
+@media (min-width: 768px){
+  .main__text-second{
+    display: block;
+  }
+}
+
+.main__text-third {
+  font-family: 'TT Lakes';
+  font-size: 14px;
+  display: none;
+
+
+}
+
+@media (min-width: 1120px){
+  .main__text-third{
+    display: block;
+  }
+}
+
+.main__next-container {
+  display: flex;
+  margin-left: 24px;
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+.arrow {
+  margin-right: 16px;
+}
+
+.main__next {
+  text-decoration: none;
+  color: #000;
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  line-height: 24px; 
+  letter-spacing: -0,2px;
+  color: #1B1C21;
+  font-weight:500;
+  width: 124px;
+}
+
+@media (min-width:768px){
+  .container-container{
+    display: flex;
+    align-items: center;
+  }
+  .photo{
+    margin-left: 48px;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    flex: 1 1 50%;
+  }
+  .main__text-container{
+    flex: 0 0 50%;
+  }
+}
